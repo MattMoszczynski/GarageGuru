@@ -13,7 +13,11 @@ class JobsController extends Controller
      */
     public function index()
     {
-        //
+        $jobs = Job::query()
+            ->with(['car', 'car.owner','service'])
+            ->get();
+
+        return $jobs;
     }
 
     /**

@@ -22,7 +22,7 @@ class Job extends Model
     use HasFactory;
 
     protected $casts = [
-        'deadline_at' => 'timestamp',
+        'deadline_at' => 'datetime',
     ];
 
     public function car(): BelongsTo
