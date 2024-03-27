@@ -17,7 +17,7 @@ use Illuminate\Support\Carbon;
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  */
-class Jobs extends Model
+class Job extends Model
 {
     use HasFactory;
 
